@@ -17,7 +17,6 @@
 package io.fabric8.bond.jmx_exporter;
 
 import io.fabric8.bond.core.AgentDescriptor;
-import io.prometheus.jmx.shaded.io.prometheus.jmx.JavaAgent;
 
 /**
  * @author roland
@@ -36,6 +35,6 @@ public class JmxExporterAgentDescriptor implements AgentDescriptor {
 
     @Override
     public Class getPremainClass() {
-        return JavaAgent.class;
+        return JavaAgentWrapper.class;
     }
 }
